@@ -1,0 +1,40 @@
+@import 'config';
+// menu Buttons
+.menu-btn{
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    @include ease-out;
+.btn-line{
+    width: 28px;
+    height: 3px;
+    margin:  0 0 5px 0;
+    background: #fff;
+    @include ease-out;
+}
+
+// Rotar la X del menu de lineas
+&.close{
+    transform: rotate(180deg);
+
+    .btn-line{
+        // Linea 1 - Rota
+        &:nth-child(1){
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        // Linea 2 - Desaparece
+        &:nth-child(2){
+            opacity: 0;
+        }
+
+        // Linea 3 - Rota
+
+        &:nth-child(3){
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+    }
+}
+}
