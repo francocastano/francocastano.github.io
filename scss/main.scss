@@ -1,6 +1,5 @@
 @import 'menu';
 @import 'config';
-@import 'mobile';
 
 *{
     box-sizing: border-box;
@@ -9,7 +8,7 @@
 body{
     @include background;
     background-color: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     margin: 0;
@@ -63,6 +62,7 @@ main{
                 color:$secondary-color;
                 @include ease-out;
             }
+        
         }
     }
 
@@ -73,3 +73,25 @@ main{
         }
     }
 }
+
+.about-info{
+    display: grid;
+    row-gap: 30px;
+    // poner entre '' los trabajos para
+    grid-template-columns: repeat(3,1fr)
+}
+
+.bio-image{
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+}
+
+.bio{
+    grid-area: bio;
+}
+
+// generar grid-area para cada trabajo que ponga
+
+ @import 'mobile';
