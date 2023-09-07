@@ -1,7 +1,7 @@
-$primary-color:#444;
+$primary-color:#333;
 $secondary-color:#eece1a;
 $show-home-image: true;
-$home-image:url(../imagenes/background.jpg);
+$home-image:url(../imagenes/Fodos_uitlizados/background.jpg);
 $background-opacity: 0.9;
 
 @mixin ease-out{
@@ -12,7 +12,7 @@ $background-opacity: 0.9;
     @if $show-home-image{
         &#bg-img{
             background: $home-image;
-            background-attachment: fixed ;
+            background-attachment: fixed;
             background-size: cover;
 
             &::after{
@@ -31,7 +31,7 @@ $background-opacity: 0.9;
 
 // Set Text Color
 @function set-text-color($color){
-    @if(lightness($color)>40){
+    @if(lightness($color) >  40){
         @return #000;
     } @else {
         @return #fff;
@@ -42,7 +42,7 @@ $background-opacity: 0.9;
 
 
 @mixin mediaSm{
-    @media screen and (max-width:500px){
+    @media screen and (max-width:320px){
         @content;
     }
 }
@@ -54,7 +54,7 @@ $background-opacity: 0.9;
 }
 
 @mixin mediaLg{
-    @media screen and (min-width:769px) and (max-width: 1170px){
+    @media screen and (min-width:769px) and (max-width: 1025px){
         @content;
     }
 }

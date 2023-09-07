@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 1;
     visibility: hidden;
     
     &.show{
@@ -86,13 +86,12 @@
             // slide in from bottom
             transform: translate3d(0,0,0);
         }
-    
+    // TODO: Poner opacidad en el menu desplegable menos en el retrato
     .retrato{
-        background: url('../imagenes/retrato.jpg');
+        background: url(../imagenes/retrato.jpg);
         background-size: cover;
-        background-position: center;
-        width: 250px;
-        height: 250px;
+        width: 325px;
+        height: 325px;
         border-radius: 50%;
         border: solid 3px $secondary-color;
         }
