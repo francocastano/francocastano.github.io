@@ -271,6 +271,9 @@ main#home h1 {
   background: #eece1a;
   color: #000;
 }
+.boxes div:hover a {
+  color: #000;
+}
 .boxes div:hover span {
   color: #000;
 }

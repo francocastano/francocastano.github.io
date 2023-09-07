@@ -35,9 +35,10 @@ h1,h2,h3{
 }
  
 // Links
-a{
-    color:#fff;
+a{  
+    color: #fff;
     text-decoration: none;
+    
 }
 //  Encabezado
 header {
@@ -163,6 +164,11 @@ main{
         @include ease-out;
 
         &:hover{
+            
+            a{
+                color: set-text-color($secondary-color);
+            }
+
             padding: 0.5rem 1.5rem;
             background: $secondary-color;
             color: set-text-color($secondary-color);
