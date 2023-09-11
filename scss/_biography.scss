@@ -1,0 +1,29 @@
+@import 'config';
+
+.biography {
+    display: flex;
+    gap: 10px;
+    margin: 2rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__card {
+        font-size: 1.5rem;
+        flex-basis: 60vw;
+        flex-grow: 1;
+    }
+
+    &__description {}
+
+    &__image {
+        height: 250px;
+        width: 250px;
+        margin: auto 2rem;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+
+    &__title {
+        color: $secondary-color;
+    }
+}

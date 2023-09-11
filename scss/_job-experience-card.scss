@@ -1,0 +1,25 @@
+@import 'config';
+
+.job-experience {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: start;
+    justify-content: space-between;
+
+    &-card {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+
+        &--featured {
+            border-bottom: $secondary-color 5px solid;
+        }
+    }
+
+    &__description {}
+
+    &__position {}
+
+    &__title {}
+
+}
