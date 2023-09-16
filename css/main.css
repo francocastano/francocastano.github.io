@@ -1,39 +1,43 @@
-.mis-proyectos--featured {
-  color: #eece1a;
-}
-.mis-proyectos--slogan {
+.projects__slogan {
   font-size: 3rem;
   margin-bottom: 2rem;
   padding: 0.2rem 0.1rem;
   background: #303030;
 }
-.mis-proyectos--title {
+.projects__title {
   font-size: 6rem;
   margin-bottom: 2rem;
 }
-
-.proyectos {
+.projects__title--featured {
+  color: #eece1a;
+}
+.projects__portfolio {
   display: grid;
-  row-gap: 0.7rem;
-  column-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: start;
+  justify-content: space-between;
 }
-.proyectos__pre-visualizacion {
-  width: 100%;
-  border: 3px #fff solid;
+
+.project-info__icon {
+  margin-right: 0.5rem;
 }
-.proyectos__pre-visualizacion:hover {
-  opacity: 0.5;
-  border-color: #eece1a;
-  transition: all 0.5s ease-in-out;
-}
-.proyectos__btn-dark {
+.project-info__link--dark {
   background: black;
   color: #fff;
 }
-.proyectos__btn-light {
+.project-info__link--light {
   background: #b3b3b3;
   color: #333;
+}
+.project-info__preview {
+  width: 100%;
+  border: 3px #fff solid;
+}
+.project-info__preview:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact-details {
@@ -77,20 +81,20 @@
   margin-top: 1rem;
 }
 
-.job-experience {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  align-items: start;
-  justify-content: space-between;
+.about__slogan {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem 0.1rem;
+  background: #303030;
 }
-.job-experience-card {
-  background: #404040;
-  padding: 0.5rem;
+.about__title {
+  font-size: 6rem;
+  margin-bottom: 2rem;
 }
-.job-experience-card--featured {
-  border-bottom: #eece1a 5px solid;
+.about__title--featured {
+  color: #eece1a;
 }
+
 .biography {
   display: flex;
   gap: 10px;
@@ -114,20 +118,20 @@
   color: #eece1a;
 }
 
-.about__slogan {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.2rem 0.1rem;
-  background: #303030;
+.job-experience {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: start;
+  justify-content: space-between;
 }
-.about__title {
-  font-size: 6rem;
-  margin-bottom: 2rem;
+.job-experience-card {
+  background: #404040;
+  padding: 0.5rem;
 }
-.about__title--featured {
-  color: #eece1a;
+.job-experience-card--featured {
+  border-bottom: #eece1a 5px solid;
 }
-
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -339,29 +343,13 @@ main#home h1 {
   font-size: x-large;
 }
 
-.projects {
-  display: grid;
-  row-gap: 0.7rem;
-  column-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-}
-.projects img {
-  width: 100%;
-  border: 3px #fff solid;
-}
-.projects img:hover {
-  opacity: 0.5;
-  border-color: #eece1a;
-  @inculude easeOut;
-}
-
-.btn, .proyectos__btn-dark, .proyectos__btn-light {
+.btn, .project-info__link--dark, .project-info__link--light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
 }
-.btn:hover, .proyectos__btn-dark:hover, .proyectos__btn-light:hover {
+.btn:hover, .project-info__link--dark:hover, .project-info__link--light:hover {
   background: #eece1a;
   color: #000;
 }

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css">
     <title>View my work</title>
 </head>
+
 <body>
     <header>
         <!-- boton hamburguesa -->
@@ -16,7 +20,7 @@
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
-        
+
         <!-- menu desplegable -->
         <nav class="menu">
             <div class="menu-branding">
@@ -30,7 +34,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">
-                       Sobre Mi 
+                        Sobre Mi
                     </a>
                 </li>
                 <li class="nav-item current">
@@ -47,57 +51,58 @@
         </nav>
     </header>
 
-    
-<main id="work">
-        <h1 class="lg-heading">
-            My <span class="text-secondary">Work</span>
-         </h1>
-         <h2 class="sm-heading">
-           check out some of my projects...
+
+    <main class="projects">
+        <h1 class="projects__title">
+            My <span class="projects__title projects__title--featured">Work</span>
+        </h1>
+        <h2 class="projects__slogan">
+            check out some of my projects...
         </h2>
-        <div class="projects">
-            
-            <div class="item">
-                <a href="#!">
-                    <img src="imagenes/Porfolio/Bootstrap_practica.jpg" alt="Project">
+
+        <div class="projects__portfolio">
+            <div class="project-info">
+                <img class="project-info__preview" src="imagenes/Porfolio/Bootstrap_practica.jpg" alt="Project">
+                <a class="project-info__link project-info__link--light" rel="noopener"
+                    href="https://francocastano.github.io/bootstrap-practica/" target="_blank">
+                    <i class="project-info__icon fas fa-eye"></i>Project
                 </a>
-                <a href="#" class="btn-light">
-                    <i class="fas fa-eye"></i>Project
-                </a>
-                <a href="#" class="btn-dark">
-                    <i class="fab fa-github"></i>Github
+                <a class="project-info__link project-info__link--dark" rel="noopener"
+                    href="https://github.com/francocastano/bootstrap-practica" target="_blank">
+                    <i class="project-info__icon fab fa-github"></i>Github
                 </a>
             </div>
 
-            <div class="item">
-                <a href="#!">
-                    <img src="imagenes/Porfolio/clon-de-landing-page.jpg" alt="Project">
+            <div class="project-info">
+                <img class="project-info__preview" src="imagenes/Porfolio/clon-de-landing-page.jpg" alt="Project">
+                <a class="project-info__link project-info__link--light" rel="noopener"
+                    href="https://francocastano.github.io/pluralsight-login-clone/">
+                    <i class="project-info__icon fas fa-eye"></i>Project
                 </a>
-                <a href="#" class="btn-light">
-                    <i class="fas fa-eye"></i>Project
-                </a>
-                <a href="#" class="btn-dark">
-                    <i class="fab fa-github"></i>Github
+                <a class="project-info__link project-info__link--dark" rel="noopener"
+                    href="https://github.com/francocastano/pluralsight-login-clone" target="_blank">
+                    <i class="project-info__icon fab fa-github"></i>Github
                 </a>
             </div>
 
-            <div class="item">
-                <a href="#!">
-                    <img src="imagenes/Porfolio/Fancy-form.jpg" alt="Project">
+            <div class="project-info">
+                <img class="project-info__preview" src="imagenes/Porfolio/Fancy-form.jpg" alt="Project">
+                <a class="project-info__link project-info__link--light" rel="noopener"
+                    href="https://francocastano.github.io/fancy-form-ui/">
+                    <i class="project-info__icon fas fa-eye"></i>Project
                 </a>
-                <a href="#" class="btn-light">
-                    <i class="fas fa-eye"></i>Project
-                </a>
-                <a href="#" class="btn-dark">
-                    <i class="fab fa-github"></i>Github
+                <a class="project-info__link project-info__link--dark" rel="noopener"
+                    href="https://github.com/francocastano/fancy-form-ui" target="_blank">
+                    <i class="project-info__icon fab fa-github"></i>Github
                 </a>
             </div>
         </div>
-   
-</main>
-<footer id="main-footer">
-    Theme by <a href="https://www.youtube.com/@TraversyMedia">Traversy Media</a>
-</footer>
-<script src="js/main.js"></script>
+
+    </main>
+    <footer id="main-footer">
+        Theme by <a href="https://www.youtube.com/@TraversyMedia">Traversy Media</a>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

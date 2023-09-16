@@ -1,6 +1,5 @@
+@import 'work';
 @import 'contact';
-@import 'job-experience-card';
-@import 'biography';
 @import 'about';
 @import 'menu';
 @import 'config';
@@ -100,56 +99,7 @@ main {
 }
 
 // Work/Project
-.projects {
-    display: grid;
-    row-gap: 0.7rem;
-    column-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
 
-    img {
-        width: 100%;
-        border: 3px #fff solid;
-
-        &:hover {
-            opacity: 0.5;
-            border-color: $secondary-color;
-            @inculude easeOut;
-        }
-    }
-}
-
-// Contact Page
-
-// .boxes {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-evenly;
-//     align-items: center;
-//     margin-top: 1rem;
-
-//     div {
-//         font-size: 2rem;
-//         border: 3px #fff solid;
-//         padding: 1.5rem 2.5rem;
-//         margin-bottom: 3rem;
-//         @include ease-out;
-
-//         &:hover {
-
-//             a {
-//                 color: set-text-color($secondary-color);
-//             }
-
-//             padding: 0.5rem 1.5rem;
-//             background: $secondary-color;
-//             color: set-text-color($secondary-color);
-
-//             span {
-//                 color: set-text-color($secondary-color);
-//             }
-//         }
-//     }
-// }
 
 // Button Styles
 
@@ -165,17 +115,6 @@ main {
     }
 }
 
-.btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: #fff;
-}
-
-.btn-light {
-    @extend .btn;
-    background: lighten($primary-color, 50);
-    color: #333;
-}
 
 #main-footer {
     text-align: center;
