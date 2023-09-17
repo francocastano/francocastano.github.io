@@ -1,6 +1,7 @@
 @import 'config';
 
 .about {
+    @include center-main-content;
 
     &__content {}
 
@@ -22,6 +23,7 @@
 }
 
 .biography {
+    
     display: flex;
     gap: 10px;
     margin: 2rem 0;

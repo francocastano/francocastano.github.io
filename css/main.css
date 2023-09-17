@@ -1,3 +1,23 @@
+.home-page {
+  background: url(../imagenes/Fodos_uitlizados/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.home-page::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(51, 51, 51, 0.9);
+}
+
+.projects {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
 .projects__slogan {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -40,26 +60,10 @@
   transition: all 0.5s ease-in-out;
 }
 
-.contact-details {
-  font-size: 2rem;
-  border: 3px #fff solid;
-  padding: 1.5rem 2.5rem;
-  transition: all 0.5s ease-in-out;
-  flex-grow: 1;
-  margin: 1rem;
+.info {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
 }
-.contact-details:hover {
-  padding: 0.5rem 1.5rem;
-  background: #eece1a;
-  color: #000;
-}
-.contact-details:hover__direction {
-  color: #000;
-}
-.contact-details:hover__link {
-  color: #000;
-}
-
 .info__slogan {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -81,6 +85,30 @@
   margin-top: 1rem;
 }
 
+.contact-details {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.5s ease-in-out;
+  flex-grow: 1;
+  margin: 1rem;
+}
+.contact-details:hover {
+  padding: 0.5rem 1.5rem;
+  background: #eece1a;
+  color: #000;
+}
+.contact-details:hover__direction {
+  color: #000;
+}
+.contact-details:hover__link {
+  color: #000;
+}
+
+.about {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
 .about__slogan {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -248,6 +276,36 @@
   transition-delay: 0.4s;
 }
 
+.front-page {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+  padding-top: 25vh;
+}
+.front-page__icons {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+.front-page__link {
+  padding: 0.4rem;
+}
+.front-page__link:hover {
+  color: #eece1a;
+  transition: all 0.5s ease-in-out;
+}
+.front-page__title {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+.front-page__title--featured {
+  color: #eece1a;
+}
+.front-page__slogan {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem 0.1rem;
+  background: #303030;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -259,21 +317,6 @@ body {
   line-height: 1.5;
   margin: 0;
   height: 100%;
-}
-body.bg-img {
-  background: url(../imagenes/Fodos_uitlizados/background.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-body.bg-img::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: rgba(51, 51, 51, 0.9);
 }
 
 h1,
@@ -310,28 +353,6 @@ header {
 
 .text-secondary {
   color: #eece1a;
-}
-
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px);
-}
-main .icons {
-  margin-top: 1rem;
-  font-size: 2.5rem;
-}
-main .icons a {
-  padding: 0.4rem;
-}
-main .icons a:hover {
-  color: #eece1a;
-  transition: all 0.5s ease-in-out;
-}
-main#home {
-  overflow: hidden;
-}
-main#home h1 {
-  margin-top: 20vh;
 }
 
 #main-footer {

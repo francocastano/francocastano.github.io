@@ -1,33 +1,7 @@
 @import 'config';
 
-.contact-details {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
-    @include ease-out;
-    flex-grow: 1;
-    margin: 1rem;
-
-    &:hover {
-        padding: 0.5rem 1.5rem;
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-
-
-        &__direction {
-            color: set-text-color($secondary-color);
-        }
-
-        &__link {
-            color: set-text-color($secondary-color);
-        }
-
-    }
-
-
-}
-
 .info {
+    @include center-main-content;
 
     &__slogan {
         font-size: 3rem;
@@ -52,5 +26,32 @@
         align-items: center;
         margin-top: 1rem;
     }
+
+}
+
+.contact-details {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    @include ease-out;
+    flex-grow: 1;
+    margin: 1rem;
+
+    &:hover {
+        padding: 0.5rem 1.5rem;
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+
+
+        &__direction {
+            color: set-text-color($secondary-color);
+        }
+
+        &__link {
+            color: set-text-color($secondary-color);
+        }
+
+    }
+
 
 }

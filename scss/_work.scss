@@ -1,6 +1,8 @@
 @import 'config';
 
 .projects {
+    @include center-main-content;
+
 
     &__slogan {
         font-size: 3rem;
@@ -20,11 +22,11 @@
     }
 
     &__portfolio {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    align-items: start;
-    justify-content: space-between;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        align-items: start;
+        justify-content: space-between;
 
     }
 }
@@ -60,4 +62,3 @@
         }
     }
 }
-
