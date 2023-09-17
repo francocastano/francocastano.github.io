@@ -3,9 +3,6 @@
 
 .front-page {
     @include center-main-content;
-    @include title;
-    @include slogan;
-
     padding-top: 25vh;
     
     &__icons {
@@ -20,5 +17,22 @@
             color: $secondary-color;
             @include ease-out;
         }
+    }
+    
+    &__title {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+
+        &--featured{
+            color: $secondary-color;
+        }
+    }
+
+    &__slogan {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding: 0.2rem 0.1rem;
+        background: rgba(darken($primary-color, 1), 1);
+
     }
 }

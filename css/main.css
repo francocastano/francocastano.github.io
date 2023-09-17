@@ -18,18 +18,18 @@
   padding: 4rem;
   min-height: calc(100vh - 60px);
 }
+.projects__slogan {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem 0.1rem;
+  background: #303030;
+}
 .projects__title {
   font-size: 6rem;
   margin-bottom: 2rem;
 }
 .projects__title--featured {
   color: #eece1a;
-}
-.projects__slogan {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.2rem 0.1rem;
-  background: #303030;
 }
 .projects__portfolio {
   display: grid;
@@ -64,18 +64,18 @@
   padding: 4rem;
   min-height: calc(100vh - 60px);
 }
+.info__slogan {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem 0.1rem;
+  background: #303030;
+}
 .info__title {
   font-size: 6rem;
   margin-bottom: 2rem;
 }
 .info__title--featured {
   color: #eece1a;
-}
-.info__slogan {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.2rem 0.1rem;
-  background: #303030;
 }
 .info__personal {
   display: flex;
@@ -109,6 +109,12 @@
   padding: 4rem;
   min-height: calc(100vh - 60px);
 }
+.about__slogan {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem 0.1rem;
+  background: #303030;
+}
 .about__title {
   font-size: 6rem;
   margin-bottom: 2rem;
@@ -116,12 +122,7 @@
 .about__title--featured {
   color: #eece1a;
 }
-.about__slogan {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.2rem 0.1rem;
-  background: #303030;
-}
+
 .biography {
   display: flex;
   gap: 10px;
@@ -280,6 +281,17 @@
   min-height: calc(100vh - 60px);
   padding-top: 25vh;
 }
+.front-page__icons {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+.front-page__link {
+  padding: 0.4rem;
+}
+.front-page__link:hover {
+  color: #eece1a;
+  transition: all 0.5s ease-in-out;
+}
 .front-page__title {
   font-size: 6rem;
   margin-bottom: 2rem;
@@ -292,17 +304,6 @@
   margin-bottom: 2rem;
   padding: 0.2rem 0.1rem;
   background: #303030;
-}
-.front-page__icons {
-  margin-top: 1rem;
-  font-size: 2.5rem;
-}
-.front-page__link {
-  padding: 0.4rem;
-}
-.front-page__link:hover {
-  color: #eece1a;
-  transition: all 0.5s ease-in-out;
 }
 
 * {
