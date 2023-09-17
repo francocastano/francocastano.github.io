@@ -3,22 +3,6 @@
 .info {
     @include center-main-content;
 
-    &__slogan {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        padding: 0.2rem 0.1rem;
-        background: rgba(darken($primary-color, 1), 1);
-    }
-
-    &__title {
-        font-size: 6rem;
-        margin-bottom: 2rem;
-
-        &--featured {
-            color: $secondary-color;
-        }
-    }
-
     &__personal {
         display: flex;
         flex-wrap: wrap;
