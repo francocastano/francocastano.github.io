@@ -19,20 +19,16 @@
         }
     }
     
-    &__title {
-        font-size: 6rem;
-        margin-bottom: 2rem;
-
-        &--featured{
-            color: $secondary-color;
-        }
+    &__slogan {
+        @include text-secondary
     }
 
-    &__slogan {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-        padding: 0.2rem 0.1rem;
-        background: rgba(darken($primary-color, 1), 1);
+    &__title {
+        @include text-primary;
+        
 
+        &--featured {
+            @include font-secondary-color;
+        }
     }
 }

@@ -10,7 +10,23 @@ $background-opacity: 0.9;
 
 @mixin center-main-content {
     padding: 4rem;
-    min-height: calc(100vh - 60px);   
+    min-height: calc(100vh - 60px);
+}
+
+@mixin text-primary {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+@mixin text-secondary {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 0.1rem;
+    background: rgba(darken($primary-color, 1), 1); // TODO; acomodar
+}
+
+@mixin font-secondary-color {
+    color: $secondary-color;
 }
 
 

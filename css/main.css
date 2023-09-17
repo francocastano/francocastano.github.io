@@ -292,18 +292,18 @@
   color: #eece1a;
   transition: all 0.5s ease-in-out;
 }
+.front-page__slogan {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem 0.1rem;
+  background: #303030;
+}
 .front-page__title {
   font-size: 6rem;
   margin-bottom: 2rem;
 }
 .front-page__title--featured {
   color: #eece1a;
-}
-.front-page__slogan {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.2rem 0.1rem;
-  background: #303030;
 }
 
 * {
