@@ -6,15 +6,18 @@
     &__content {}
 
     &__slogan {
-        @include text-secondary
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding: 0.2rem 0.1rem;
+        background: rgba(darken($primary-color, 1), 1); // TODO; acomodar
     }
 
     &__title {
-        @include text-primary;
-        
+        font-size: 6rem;
+        margin-bottom: 2rem;
 
         &--featured {
-            @include font-secondary-color;
+            color: $secondary-color;
         }
     }
 }
