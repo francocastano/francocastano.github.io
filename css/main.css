@@ -29,6 +29,18 @@
   color: #eece1a;
 }
 
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  height: 60px;
+  font-size: x-large;
+}
+.footer__link {
+  color: #eece1a;
+}
+
 .projects {
   padding: 4rem;
   min-height: calc(100vh - 60px);
@@ -287,20 +299,6 @@ h3 {
   margin: 0;
   font-weight: 400;
 }
-h1.lg-heading,
-h2.lg-heading,
-h3.lg-heading {
-  font-size: 6rem;
-  margin-bottom: 2rem;
-}
-h1.sm-heading,
-h2.sm-heading,
-h3.sm-heading {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  padding: 0.2rem 0.1rem;
-  background: #303030;
-}
 
 a {
   color: #fff;
@@ -313,19 +311,6 @@ header {
   width: 100%;
 }
 
-.text-secondary {
-  color: #eece1a;
-}
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1a1a1a;
-  color: #fff;
-  height: 60px;
-  font-size: x-large;
-}
-
 .btn, .project-info__link--dark, .project-info__link--light {
   display: block;
   padding: 0.5rem 1rem;
@@ -335,13 +320,6 @@ header {
 .btn:hover, .project-info__link--dark:hover, .project-info__link--light:hover {
   background: #eece1a;
   color: #000;
-}
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #1a1a1a;
-  color: #fff;
 }
 
 @media screen and (min-width: 1171px) {
@@ -358,10 +336,6 @@ header {
   main {
     align-items: center;
     text-align: center;
-  }
-  .lg-heading {
-    line-height: 1;
-    margin-bottom: 1rem;
   }
   ul.menu-nav, div.menu-branding {
     float: none;

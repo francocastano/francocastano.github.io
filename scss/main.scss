@@ -56,20 +56,6 @@ header {
     width: 100%;
 }
 
-.text-secondary {
-    color: $secondary-color;
-}
-
-
-#main-footer {
-    text-align: center;
-    padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
-    font-size: x-large;
-}
-
 // Work/Project
 
 
@@ -86,14 +72,5 @@ header {
         color: set-text-color($secondary-color);
     }
 }
-
-
-#main-footer {
-    text-align: center;
-    padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color)
-}
-
 
 @import 'mobile';
