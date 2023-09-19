@@ -47,30 +47,30 @@
         margin: 0 0 5px 0;
         background: set-text-color($primary-color);
         @include ease-out;
-    }
 
-    &.close{
-        transform: rotate(180deg);
-    
-        .burger-menu-icon__line{
+        &--close {
+            transform: rotate(180deg);
+
+
             // Linea 1 - Rota
-            &:nth-child(1){
+            &:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
             }
-    
+
             // Linea 2 - Desaparece
-            &:nth-child(2){
+            &:nth-child(2) {
                 opacity: 0;
             }
-    
+
             // Linea 3 - Rota
-    
-            &:nth-child(3){
+
+            &:nth-child(3) {
                 transform: rotate(-45deg) translate(6px, -6px);
-                }
             }
         }
+    }
 }
+
 
 .menu {
     position: fixed;
@@ -84,9 +84,9 @@
     top: 0;
     width: 100%;
     opacity: 1;
-    visibility: hidden;
+    // visibility: hidden;
 
-    &.show {
+    &--show {
         visibility: visible;
     }
 
@@ -103,9 +103,9 @@
         transform: translate3d(0, 100%, 0);
         @include ease-out;
 
-        &.show{
+        &--show {
             // slide in from bottom
-            transform: translate3d(0,0,0);
+            transform: translate3d(0, 0, 0);
         }
     }
 }
@@ -127,9 +127,9 @@
     transform: translate3d(0, -100%, 0);
     @include ease-out;
 
-    &.show{
+    &--show {
         // slide in from top
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
     }
 
     &__link {
@@ -146,23 +146,23 @@
         &:hover {
             color: $secondary-color;
         }
+
+        &--current {
+            color: $secondary-color;
+
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 
     &__page {
         transform: translate3d(600px, 0, 0);
         @include ease-out;
 
-        &.show {
+        &--show {
             // slide in from right
             transform: translate3d(0, 0, 0);
-        }
-
-        &.current>a {
-            color: $secondary-color;
-        }
-
-        &--current {
-            color: $secondary-color;
         }
     }
 }
@@ -177,7 +177,7 @@
 }
 
 @for $x from 1 through 4 {
-    .nav-item:nth-child(#{$x}){
+    .pages-selector__page:nth-child(#{$x}) {
         transition-delay: $x * 0.1s;
     }
 }

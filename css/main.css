@@ -56,16 +56,16 @@
   background: #fff;
   transition: all 0.5s ease-in-out;
 }
-.burger-menu-icon.close {
+.burger-menu-icon__line--close {
   transform: rotate(180deg);
 }
-.burger-menu-icon.close .burger-menu-icon__line:nth-child(1) {
+.burger-menu-icon__line--close:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-.burger-menu-icon.close .burger-menu-icon__line:nth-child(2) {
+.burger-menu-icon__line--close:nth-child(2) {
   opacity: 0;
 }
-.burger-menu-icon.close .burger-menu-icon__line:nth-child(3) {
+.burger-menu-icon__line--close:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
@@ -80,9 +80,8 @@
   top: 0;
   width: 100%;
   opacity: 1;
-  visibility: hidden;
 }
-.navigation.show {
+.navigation--show {
   visibility: visible;
 }
 .navigation__branding {
@@ -98,7 +97,7 @@
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-in-out;
 }
-.navigation__branding.show {
+.navigation__branding--show {
   transform: translate3d(0, 0, 0);
 }
 
@@ -118,7 +117,7 @@
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-in-out;
 }
-.pages-selector.show {
+.pages-selector--show {
   transform: translate3d(0, 0, 0);
 }
 .pages-selector__link {
@@ -135,18 +134,18 @@
 .pages-selector__link:hover {
   color: #eece1a;
 }
+.pages-selector__link--current {
+  color: #eece1a;
+}
+.pages-selector__link--current:hover {
+  color: #fff;
+}
 .pages-selector__page {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-in-out;
 }
-.pages-selector__page.show {
+.pages-selector__page--show {
   transform: translate3d(0, 0, 0);
-}
-.pages-selector__page.current > a {
-  color: #eece1a;
-}
-.pages-selector__page--current {
-  color: #eece1a;
 }
 
 .portrait {
@@ -158,19 +157,19 @@
   border: solid 3px #eece1a;
 }
 
-.nav-item:nth-child(1) {
+.pages-selector__page:nth-child(1) {
   transition-delay: 0.1s;
 }
 
-.nav-item:nth-child(2) {
+.pages-selector__page:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-.nav-item:nth-child(3) {
+.pages-selector__page:nth-child(3) {
   transition-delay: 0.3s;
 }
 
-.nav-item:nth-child(4) {
+.pages-selector__page:nth-child(4) {
   transition-delay: 0.4s;
 }
 
