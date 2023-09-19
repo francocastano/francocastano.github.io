@@ -15,7 +15,7 @@ burgerMenuIcon.addEventListener('click', toggleMenu);
 function toggleMenu() {
     if(!showMenu){
         menuBtn.forEach(item => item.classList.add('burger-menu-icon__line--close'));
-        menu.classList.add('navatigation--show');
+        menu.classList.add('navigation--show');
         menuNav.classList.add('pages-selector--show');
         menuBranding.classList.add('navigation__branding--show');
         navItems.forEach(item => item.classList.add('pages-selector__page--show'));
@@ -24,7 +24,7 @@ function toggleMenu() {
         showMenu = true;
     } else {
         menuBtn.forEach(item => item.classList.remove('burger-menu-icon__line--close'));
-        menu.classList.remove('navatigation--show');
+        menu.classList.remove('navigation--show');
         menuNav.classList.remove('pages-selector--show');
         menuBranding.classList.remove('navigation__branding--show');
         navItems.forEach(item => item.classList.remove('pages-selector__page--show'));
