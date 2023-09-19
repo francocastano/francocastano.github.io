@@ -79,12 +79,18 @@
 }
 
 .navigation {
+    display: flex;
+    flex-direction: column;
+    // grid-gap: 10px;
+    // grid-template-columns: repeat( 1fr));
+    // align-items: start;
+    // justify-content: space-between;
 
     position: fixed;
     top: 0;
     width: 100%;
     opacity: 1;
-    // visibility: hidden;
+    visibility: hidden;
 
     &--show {
         visibility: visible;
@@ -96,11 +102,11 @@
         align-items: center;
         justify-content: center;
         float: left;
-        width: 50%;
-        height: 100vh;
+        width: 100vw;
+        height: 35vh;
         overflow: hidden;
         background: $primary-color;
-        transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, -200%, 0);
         @include ease-out;
 
         &--show {
@@ -117,14 +123,14 @@
     align-items: center;
     justify-content: center;
     float: left;
-    width: 50%;
-    height: 100vh;
+    width: 100vw;
+    height: 70vh;
     overflow: hidden;
     margin: 0;
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, 100%, 0);
     @include ease-out;
 
     &--show {
@@ -157,7 +163,7 @@
     }
 
     &__page {
-        transform: translate3d(600px, 0, 0);
+        transform: translate3d(-600px, 0, 0);
         @include ease-out;
 
         &--show {
