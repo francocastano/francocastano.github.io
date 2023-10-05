@@ -45,6 +45,7 @@
     justify-content: space-between;
 
     &-card {
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
         background: lighten($primary-color, 5);
         padding: 0.5rem;
 
@@ -53,7 +54,8 @@
         }
     }
 
-    &__description {}
+    &__description {
+    }
 
     &__position {}
 

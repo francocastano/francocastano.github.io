@@ -14,9 +14,9 @@
 }
 
 .contact-details {
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 1.5rem;
     @include ease-out;
     flex-grow: 1;
     margin: 1rem;

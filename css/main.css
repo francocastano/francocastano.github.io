@@ -15,15 +15,16 @@
 }
 
 .slogan {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin-bottom: 1rem;
   padding: 0.2rem 0.1rem;
   background: #303030;
 }
 
 .title {
-  font-size: 6rem;
-  margin-bottom: 2rem;
+  padding-top: 2rem;
+  font-size: clamp(3rem, 10vw, 6rem);
+  margin-bottom: 1rem;
 }
 .title--featured {
   color: #eece1a;
@@ -177,7 +178,7 @@
 }
 
 .projects {
-  padding: 4rem;
+  padding: 0.5rem;
   min-height: calc(100vh - 60px);
 }
 .projects__portfolio {
@@ -210,7 +211,7 @@
 }
 
 .info {
-  padding: 4rem;
+  padding: 0.5rem;
   min-height: calc(100vh - 60px);
 }
 .info__personal {
@@ -222,9 +223,9 @@
 }
 
 .contact-details {
-  font-size: 2rem;
+  font-size: clamp(1rem, 2.5vw, 2rem);
   border: 3px #fff solid;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 1.5rem;
   transition: all 0.5s ease-in-out;
   flex-grow: 1;
   margin: 1rem;
@@ -242,7 +243,7 @@
 }
 
 .about {
-  padding: 4rem;
+  padding: 0.5rem;
   min-height: calc(100vh - 60px);
 }
 .biography {
@@ -276,6 +277,7 @@
   justify-content: space-between;
 }
 .job-experience-card {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
   background: #404040;
   padding: 0.5rem;
 }
@@ -283,7 +285,7 @@
   border-bottom: #eece1a 5px solid;
 }
 .front-page {
-  padding: 4rem;
+  padding: 0.5rem;
   min-height: calc(100vh - 60px);
   padding-top: 25vh;
 }

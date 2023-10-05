@@ -5,15 +5,16 @@
 }
 
 .slogan {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: clamp(1.5rem, 5vw, 3rem); 
+    margin-bottom: 1rem;
     padding: 0.2rem 0.1rem;
     background: rgba(darken($primary-color, 1), 1); // TODO; acomodar
 }
 
 .title {
-    font-size: 6rem;
-    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: clamp(3rem, 10vw, 6rem); 
+    margin-bottom: 1rem;
 
     &--featured {
         color: $secondary-color;
@@ -81,10 +82,7 @@
 .navigation {
     display: flex;
     flex-direction: column;
-    // grid-gap: 10px;
-    // grid-template-columns: repeat( 1fr));
-    // align-items: start;
-    // justify-content: space-between;
+
 
     position: fixed;
     top: 0;

@@ -1,3 +1,4 @@
+// @import 'reset';
 @import 'shared';// @import 'reset';
 @import 'work';
 @import 'contact';
@@ -57,5 +58,3 @@ header {
         color: set-text-color($secondary-color);
     }
 }
-
-@import 'mobile';
