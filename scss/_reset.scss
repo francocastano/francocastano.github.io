@@ -8,25 +8,25 @@
     --tipo-secundaria  : Verdana;
   }
     
-  /* (Opcional) Las adaptamos al modo oscuro */
-  @media (prefers-color-scheme: dark) {
-    :root{
-        --negro         : #ececec;
-    }
-  }
+  // /* (Opcional) Las adaptamos al modo oscuro */
+  // @media (prefers-color-scheme: dark) {
+  //   :root{
+  //       --negro         : #ececec;
+  //   }
+  // }
   
-  /* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-  @media (prefers-contrast: high){
-      :root{}
-  }
+  // /* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+  // @media (prefers-contrast: high){
+  //     :root{}
+  // }
   
-  /* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation: none !important;
-      transition: none !important;
-    }
-  }
+  // /* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+  // @media (prefers-reduced-motion: reduce) {
+  //   * {
+  //     animation: none !important;
+  //     transition: none !important;
+  //   }
+  // }
   
   /* Reseteamos los margin y paddings de todas las etiquetas */
   * , *::before , *::after{
@@ -45,8 +45,8 @@
     max-width: 100%;
     width: 100%;
     display: block;
-    /* (Opcional) */ object-fit: cover;        
-    /* (Opcional) */ object-position: center center;
+    // /* (Opcional) */ object-fit: cover;        
+    // /* (Opcional) */ object-position: center center;
   }
   
   /* Reseteamos los enlaces para funcionar como cajas... */
@@ -86,10 +86,10 @@
   }
   
   /* (Opcional) Configuramos el texto que seleccionamos */
-  ::selection {
-    background-color: var(--negro);
-    color: var(--blanco);
-  }
+  // ::selection {
+  //   background-color: var(--negro);
+  //   color: var(--blanco);
+  // }
   
   /* Nivelamos problemas de tipografías y colocación de formularios */
   form , input, textarea, select , button , label{
@@ -99,7 +99,7 @@
       background-color: transparent;
       color:inherit;
       display: block;
-      /* (Opcional) */ appearance: none;
+      // /* (Opcional) */ appearance: none;
   }
   
   /* Reseteamos las tablas */
@@ -121,8 +121,8 @@
     font-size   : 100%;
     font-family : var(--tipo-principal);
     color       : var(--negro);
-    /* (Opcional) */ hyphens: auto;
-    /* (Opcional) */ font-smooth: always;
-    /* (Opcional) */ -webkit-font-smoothing: antialiased;
-    /* (Opcional) */ -moz-osx-font-smoothing: grayscale;
+    // /* (Opcional) */ hyphens: auto;
+    // /* (Opcional) */ font-smooth: always;
+    // /* (Opcional) */ -webkit-font-smoothing: antialiased;
+    // /* (Opcional) */ -moz-osx-font-smoothing: grayscale;
   }

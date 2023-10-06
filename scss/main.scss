@@ -1,14 +1,10 @@
-// @import 'reset';
+@import 'reset';
 @import 'shared';// @import 'reset';
 @import 'work';
 @import 'contact';
 @import 'about';
 @import 'config';
 @import 'index';
-
-* {
-    box-sizing: border-box;
-}
 
 body {
     background-color: $primary-color;

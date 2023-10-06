@@ -14,7 +14,7 @@
 }
 
 .project-info {
-    
+    width: clamp(250px,100%,600px);
 
     &__icon {
         margin-right: 0.5rem;

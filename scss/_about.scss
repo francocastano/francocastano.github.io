@@ -21,7 +21,9 @@
         flex-grow: 1;
     }
 
-    &__description {}
+    &__description {
+        text-align: justify;
+    }
 
     &__image {
         height: 250px;
@@ -45,7 +47,7 @@
     justify-content: space-between;
 
     &-card {
-        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        width: clamp(100px,100%,100vw);
         background: lighten($primary-color, 5);
         padding: 0.5rem;
 
