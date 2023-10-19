@@ -71,7 +71,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 form, input, textarea, select, button, label {
   font-family: inherit;
   font-size: inherit;
-  hyphens: auto;
   background-color: transparent;
   color: inherit;
   display: block;
@@ -216,6 +215,14 @@ body {
 .navigation__branding--show {
   transform: translate3d(0, 0, 0);
 }
+.navigation__portrait {
+  background: url(../imagenes/retrato.jpg);
+  background-size: cover;
+  height: calc(35vh - 5rem);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: solid 3px #eece1a;
+}
 
 .pages-selector {
   display: flex;
@@ -264,15 +271,6 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.portrait {
-  background: url(../imagenes/retrato.jpg);
-  background-size: cover;
-  width: 325px;
-  height: 325px;
-  border-radius: 50%;
-  border: solid 3px #eece1a;
-}
-
 .pages-selector__page:nth-child(1) {
   transition-delay: 0.1s;
 }
@@ -290,12 +288,14 @@ body {
 }
 
 .projects {
+  margin: 0 3rem;
   padding: 0.5rem;
   min-height: calc(100vh - 5rem);
 }
 .projects__portfolio {
+  margin-top: 2rem;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: start;
   justify-content: space-between;
@@ -306,6 +306,9 @@ body {
 }
 .project-info__icon {
   margin-right: 0.5rem;
+}
+.project-info__link {
+  margin: 1rem 0;
 }
 .project-info__link--dark {
   background: black;
@@ -326,6 +329,7 @@ body {
 }
 
 .info {
+  margin: 0 3rem;
   padding: 0.5rem;
   min-height: calc(100vh - 5rem);
 }
@@ -361,6 +365,7 @@ body {
 }
 
 .about {
+  margin: 0 3rem;
   padding: 0.5rem;
   min-height: calc(100vh - 5rem);
 }
@@ -406,6 +411,7 @@ body {
   border-bottom: #eece1a 5px solid;
 }
 .front-page {
+  margin: 0 3rem;
   padding: 0.5rem;
   min-height: calc(100vh - 5rem);
   padding-top: 25vh;
@@ -415,6 +421,7 @@ body {
   font-size: 2.5rem;
 }
 .front-page__link {
+  display: inline;
   padding: 0.4rem;
 }
 .front-page__link:hover {

@@ -126,6 +126,15 @@
             transform: translate3d(0, 0, 0);
         }
     }
+
+    &__portrait {
+        background: url(../imagenes/retrato.jpg);
+        background-size: cover;
+        height: calc(35vh - 5rem);
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        border: solid 3px $secondary-color;
+    }
 }
 
 .pages-selector {
@@ -185,14 +194,7 @@
     }
 }
 
-.portrait {
-    background: url(../imagenes/retrato.jpg);
-    background-size: cover;
-    width: 325px;
-    height: 325px;
-    border-radius: 50%;
-    border: solid 3px $secondary-color;
-}
+
 
 @for $x from 1 through 4 {
     .pages-selector__page:nth-child(#{$x}) {

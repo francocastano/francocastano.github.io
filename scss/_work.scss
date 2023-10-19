@@ -4,8 +4,9 @@
     @include center-main-content;
 
     &__portfolio {
+        margin-top: 2rem;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 2rem;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         align-items: start;
         justify-content: space-between;
@@ -21,6 +22,8 @@
     }
 
     &__link {
+        margin: 1rem 0;
+        
         &--dark {
             @extend .btn;
             background: darken($primary-color, 50);
