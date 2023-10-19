@@ -37,20 +37,3 @@ header {
     z-index: 2;
     width: 100%;
 }
-
-// Work/Project
-
-
-// Button Styles
-
-.btn {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-
-    &:hover {
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-    }
-}

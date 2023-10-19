@@ -26,9 +26,11 @@
     padding: 1rem;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
-    font-size: x-large;
+    font-size: 18pt;
+    min-height: 5rem;
 
     &__link {
+        display: inline;
         color: $secondary-color;
     }
 }
@@ -77,6 +79,19 @@
     z-index: 2;
     width: 100%;
 }
+
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}
+
 
 .navigation {
     display: flex;
